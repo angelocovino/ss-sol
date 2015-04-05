@@ -20,6 +20,7 @@
 		$images_path="images/";
 		$stylesheet_path="stylesheet/";
 	?>
+	<link href='http://fonts.googleapis.com/css?family=Advent+Pro:400,100,200,300,500,600,700' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" type="image/x-icon" href="<?php echo $images_path; ?>icono.ico" />
 	<link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:300,400'>
 	<link rel='stylesheet' type='text/css' href='<?php echo $stylesheet_path; ?>stylesheet.css'>
@@ -42,13 +43,26 @@
 	</script>
 </head>
 <body>
-	<section>
+	<section id="menu">asdd</section>
+	
+	<section id="corpo">
+		<nav>
+		<!--
+			<a href="#">&#9776;</a>
+		-->
+		<a href="#">works</a><a href="#">portfolio</a><a href="#">contacts</a>
+		</nav><br />
 		lorem ipsum
+		<br />
+		<div id="logo">asd</div>
+		<br />
 	</section>
+	
+	<section id="top_gap">&nbsp;</section>
 
 	<footer>
 		<div id="copyright">&copy; 2014 - 2015 Angelo Covino</div>
-		<div id="website_version">WebSite Version 2.0</div>
+		<div id="website_version">WebSite Version 1.0</div>
 	</footer>
 </body>
 </html>

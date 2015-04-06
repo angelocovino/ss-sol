@@ -374,7 +374,9 @@ optgroup {
 }
 
 body {
+	font-family:'Karla';
 	font-family:'Advent Pro';
+	font-weight:400;
 	font-weight:200;
 	font-size:30px;
 	text-align:center;

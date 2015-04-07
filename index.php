@@ -44,26 +44,26 @@
 	</script>
 </head>
 <body>
-	<section id="menu">asdd</section>
+	<section id="menu">
+		<nav>
+		<a href="#">&#9776;</a><a href="#">works</a><a href="#">portfolio</a><a href="#">contacts</a>
+		</nav>
+	</section>
 	
 	<section id="corpo">
-		<nav>
-		<!--
-			<a href="#">&#9776;</a>
-		-->
-		<a href="#">works</a><a href="#">portfolio</a><a href="#">contacts</a>
-		</nav><br />
+		<br />
 		lorem ipsum
 		<br />
 		<div id="logo">asd</div>
 		<br />
 	</section>
 	
-	<section id="top_gap">&nbsp;</section>
-
-	<footer>
-		<div id="copyright">&copy; 2014 - 2015 Angelo Covino</div>
-		<div id="website_version">WebSite Version 1.0</div>
+	<!--
+	<section id="secondo">asd</section>
+	-->
+	
+	<footer id="copyright">
+		&copy; 2014 - 2015 Angelo Covino
 	</footer>
 </body>
 </html>

@@ -53,9 +53,7 @@
 	<section id="corpo">
 		<br />
 		lorem ipsum
-		<br />
 		<div id="logo">asd</div>
-		<br />
 	</section>
 	
 	<!--

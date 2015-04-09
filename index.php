@@ -42,11 +42,28 @@
 			});
 		});
 	</script>
+	<link rel="stylesheet" href="sidr/stylesheets/jquery.sidr.dark.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
+	<div id="sidr">
+		<ul>
+			<li><a href="#">List 1</a></li>
+			<li class="active"><a href="#">List 2</a></li>
+			<li><a href="#">List 3</a></li>
+		</ul>
+	</div>
+	 
+	<script>
+	$(document).ready(function() {
+		$('#simple-menu').sidr();
+	});
+	</script>
+	
+
 	<section id="menu">
 		<nav>
-		<a href="#">&#9776;</a><a href="#">works</a><a href="#">portfolio</a><a href="#">contacts</a>
+		<a id="simple-menu" href="#sidr">&#9776;</a><a href="#">works</a><a href="#">portfolio</a><a href="#">contacts</a>
 		</nav>
 	</section>
 	
@@ -66,5 +83,6 @@
 		&copy; 2014 - 2015 Angelo Covino
 	</footer>
 	
+	<script src="sidr/jquery.sidr.min.js"></script> 
 </body>
 </html>

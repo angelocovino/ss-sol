@@ -50,18 +50,21 @@
 		</nav>
 	</section>
 	
-	<section id="corpo">
-		<br />
+	<section class="corpo bg1">
 		lorem ipsum
-		<div id="logo">asd</div>
 	</section>
 	
-	<!--
-	<section id="secondo">asd</section>
-	-->
+	<section class="unicolor">
+		lorem ipsum
+	</section>
+	
+	<section class="corpo bg2">
+		lorem ipsum
+	</section>
 	
 	<footer id="copyright">
 		&copy; 2014 - 2015 Angelo Covino
 	</footer>
+	
 </body>
 </html>

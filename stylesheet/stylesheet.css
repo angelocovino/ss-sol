@@ -391,18 +391,28 @@ body {
 	width:100%;
 	color:white;
 }
-#corpo {
+.corpo {
+	min-height:50%;
+}
+.bg1 {
 	//background:url('../images/bg.png') left top repeat transparent;
 	background-image:url('../images/bg.png'), url('../images/background-blur-blurred-1459.jpg');
 	background-repeat:repeat, no-repeat;
 	background-position:0, 0;
 	background-attachment:fixed, scroll;
 	background-size:auto, cover;
-	min-height:100%;
 }
-#secondo {
+.bg2 {
+	background-image:url('../images/bg.png'), url('../images/n/The_Setting_Sun_by_gilad.jpg');
+	background-repeat:repeat, no-repeat;
+	background-position:0, 0;
+	background-attachment:fixed, scroll;
+	background-size:auto, cover;
+}
+.unicolor {
 	background:black;
-	color:white;
+	font-size:0.6em;
+	color:rgba(255, 255, 255, 0.5);
 }
 nav {
 	text-align:left;

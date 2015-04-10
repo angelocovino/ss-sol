@@ -68,14 +68,15 @@
 	</section>
 	
 	<section class="corpo bg1">
-		lorem ipsum
+		lorem ipsum<br />
+		<div class="button">lorem ipsum</div><br />
 	</section>
 	
 	<section class="unicolor">
 		lorem ipsum
 	</section>
 	
-	<section class="corpo bg2">
+	<section class="corpo bg1">
 		lorem ipsum
 	</section>
 	

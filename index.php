@@ -74,23 +74,21 @@
 <body>
 	<div id="ac_sider">
 		<ul>
-			<li><a href="#">List 1</a></li>
-			<li class="active"><a href="#">List 2</a></li>
-			<li><a href="#">List 3</a></li>
+			<li><a href="#">works</a></li>
+			<li class="active"><a href="#">portfolio</a></li>
+			<li><a href="#">contacts</a></li>
 		</ul>
 	</div>
 	
 	<section id="menu">
-		<nav>
-			<a id="menu_activator">&#9776;</a><a href="#">works</a><a href="#">portfolio</a><a href="#">contacts</a>
-		</nav>
+		<a id="menu_activator">&#9776;</a>
 	</section>
 	
-	<section class="corpo bg1">
+	<section class="corpo">
 		lorem ipsum<br />
 		<div class="button">lorem ipsum</div><br />
 	</section>
-	
+	<!--
 	<section class="unicolor">
 		lorem ipsum
 	</section>
@@ -98,6 +96,7 @@
 	<section class="corpo bg1">
 		lorem ipsum
 	</section>
+	-->
 	
 	<footer id="copyright">
 		&copy; 2014 - 2015 Angelo Covino

@@ -385,31 +385,39 @@ body {
 	font-size:20px;
 	text-align:center;
 	line-height:1.5em;
-	background:black;
+	background:url('../images/n/017.jpg') top left no-repeat fixed transparent;
+	background-size:cover;
 }
 #menu {
-	position:relative;
+	position:absolute;
 	top:0;
 	left:0;
 	display:inline-block;
-	width:100%;
-	color:white;
+	background:#FAF5F3;
+	opacity:0.85;
+	text-align:left;
+	padding:0.5em 1em;
+	font-size:0.8em;
+	color:rgba(0, 0, 0, 0.5);
+	text-transform:uppercase;
 }
 .corpo {
+	display:inline-block;
+	width:500px;
 	font-size:0.8em;
 	min-height:75%;
 	color:black;
 	padding:3em 0em;
 	box-sizing:border-box;
 }
-.bg1 {
+.bbg1 {
 	background-image:url('../images/bg.png'), url('../images/n/blurred-colors-minimalistic-simple-simple-background-1600x1200.jpg');
 	background-repeat:repeat, no-repeat;
 	background-position:0, 0;
 	background-attachment:fixed, fixed;
 	background-size:auto, cover;
 }
-.bg2 {
+.bbg2 {
 	background-image:url('../images/bg.png'), url('../images/n/out_of_focus.jpg');
 	background-repeat:repeat, no-repeat;
 	background-position:0, 0;
@@ -423,31 +431,17 @@ body {
 }
 .button {
 	font-size:0.9em;
-	border:1px solid black;
-	padding:0.25em 0.5em;
+	padding:0.5em 1em;
 	display:inline-block;
 	border-radius:0.25em;
+	background:rgba(255, 255, 255, 0.5);
 	color:black;
-}
-nav {
-	text-align:left;
-	padding:0em 0.25em;
-}
-nav a {
-	display:inline-block;
-	color:rgba(255, 255, 255, 0.5);
-	font-size:0.6em;
-	text-transform:uppercase;
-	padding:0em 0.25em;
 }
 #logo {
 	display:inline-block;
 	padding:1em 1em;
 	border-radius:50%;
 	background:rgba(190, 68, 68, 0.9);
-}
-nav a:hover {
-	color:white;
 }
 #copyright {
 	text-align:center;
@@ -490,6 +484,7 @@ nav a {
 	left:-260px;
 	top:0;
 	height:100%;
+	background:rgba(255, 255, 255, 0.5);
 	width:260px;
 	border-right:1px solid gray;
 }
@@ -500,14 +495,14 @@ nav a {
 	margin:0 0.25em;
 }
 #ac_sider ul li:not(:last-child) {
-	border-bottom:1px solid gray;
+	border-bottom:1px solid black;
 }
 #ac_sider ul li a {
 	display:block;
 	font-size:0.6em;
 	text-transform:uppercase;
-	color:rgba(255, 255, 255, 0.5);
+	color:rgba(0, 0, 0, 0.5);
 }
 #ac_sider ul li a:hover {
-	color:rgba(255, 255, 255, 1);
+	color:rgba(0, 0, 0, 1);
 }

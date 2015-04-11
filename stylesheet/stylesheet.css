@@ -374,6 +374,10 @@ optgroup {
 }
 
 body {
+	position:absolute;
+	top:0;
+	left:0;
+	overflow-x:auto;
 	font-family:'Advent Pro';
 	font-family:'Karla';
 	font-weight:200;
@@ -393,7 +397,7 @@ body {
 }
 .corpo {
 	font-size:0.8em;
-	//min-height:75%;
+	min-height:75%;
 	color:black;
 	padding:3em 0em;
 	box-sizing:border-box;
@@ -433,7 +437,6 @@ nav a {
 	display:inline-block;
 	color:rgba(255, 255, 255, 0.5);
 	font-size:0.6em;
-	text-transform:lowercase;
 	text-transform:uppercase;
 	padding:0em 0.25em;
 }
@@ -481,3 +484,30 @@ nav a {
 	border-color:white transparent transparent transparent;
 }
 */
+#ac_sider {
+	display:none;
+	position:absolute;
+	left:-260px;
+	top:0;
+	height:100%;
+	width:260px;
+	border-right:1px solid gray;
+}
+#ac_sider ul {
+	list-style:none;
+}
+#ac_sider ul li {
+	margin:0 0.25em;
+}
+#ac_sider ul li:not(:last-child) {
+	border-bottom:1px solid gray;
+}
+#ac_sider ul li a {
+	display:block;
+	font-size:0.6em;
+	text-transform:uppercase;
+	color:rgba(255, 255, 255, 0.5);
+}
+#ac_sider ul li a:hover {
+	color:rgba(255, 255, 255, 1);
+}

@@ -1,4 +1,4 @@
-# ss-sol
+# ss-sol [WIP]
 
 Sól or Sunna is the Sun personified in Germanic mythology. One of the two Old High German Merseburg Incantations, written in the 9th or 10th century CE, attests that Sunna is the sister of Sinthgunt. In Norse mythology, Sól is attested in the Poetic Edda, compiled in the 13th century from earlier traditional sources, and the Prose Edda, written in the 13th century by Snorri Sturluson.
 
@@ -8,4 +8,4 @@ In both the Poetic Edda and the Prose Edda she is described as the sister of the
 3 April 2015
 
 #### ideas
-sun-warm based project
+- ac_sider [v1]

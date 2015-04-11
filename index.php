@@ -42,28 +42,47 @@
 			});
 		});
 	</script>
+	<!--
 	<link rel="stylesheet" href="sidr/stylesheets/jquery.sidr.dark.css">
+	-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		//$("#ac_sider").css({"padding-top":""+$("#menu").height()+"px"});
+		var menu_opened = function(){
+			return ($("#ac_sider").is(":visible"));
+		};
+		var tempo = 150;
+		$("#menu_activator").click(function(){
+			if(menu_opened()){
+				$("body")
+					.animate({"left":"0"},tempo, function(){
+						$(this).css({"overflow-x":"auto"});
+					});
+				//$("#menu").animate({"left":"0"},tempo);
+			}else{
+				$("body")
+					.animate({"left":"260px"},tempo)
+					.css({"overflow-x":"hidden"});
+				//$("#menu").animate({"left":"-260px"},tempo);
+			}
+			$("#ac_sider").animate({"width":"toggle"},tempo);
+		});
+	});
+	</script>
 </head>
 <body>
-	<div id="sidr">
+	<div id="ac_sider">
 		<ul>
 			<li><a href="#">List 1</a></li>
 			<li class="active"><a href="#">List 2</a></li>
 			<li><a href="#">List 3</a></li>
 		</ul>
 	</div>
-	 
-	<script>
-	$(document).ready(function() {
-		$('#simple-menu').sidr();
-	});
-	</script>
 	
-
 	<section id="menu">
 		<nav>
-		<a id="simple-menu" href="#sidr">&#9776;</a><a href="#">works</a><a href="#">portfolio</a><a href="#">contacts</a>
+			<a id="menu_activator">&#9776;</a><a href="#">works</a><a href="#">portfolio</a><a href="#">contacts</a>
 		</nav>
 	</section>
 	
@@ -84,6 +103,8 @@
 		&copy; 2014 - 2015 Angelo Covino
 	</footer>
 	
-	<script src="sidr/jquery.sidr.min.js"></script> 
+	<!--
+	<script src="sidr/jquery.sidr.min.js"></script>
+	-->
 </body>
 </html>

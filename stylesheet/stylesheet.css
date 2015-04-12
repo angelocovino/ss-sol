@@ -385,11 +385,9 @@ body {
 	font-size:20px;
 	text-align:center;
 	line-height:1.5em;
-	background:url('../images/n/017.jpg') top left no-repeat fixed transparent;
-	background-size:cover;
 }
 #menu {
-	position:absolute;
+	position:fixed;
 	top:0;
 	left:0;
 	display:inline-block;
@@ -399,6 +397,8 @@ body {
 	font-size:0.8em;
 	color:rgba(0, 0, 0, 0.5);
 	text-transform:uppercase;
+	border-right:1px solid gray;
+	border-bottom:1px solid gray;
 }
 #menu a {
 }
@@ -406,11 +406,13 @@ body {
 	color:black;
 }
 .corpo {
-	display:inline-block;
+	min-height:100%;
 	font-size:0.8em;
 	color:black;
 	padding:3em 0em;
 	box-sizing:border-box;
+	background:url('../images/n/017.jpg') top left no-repeat fixed transparent;
+	background-size:cover;
 }
 .bbg1 {
 	background-image:url('../images/bg.png'), url('../images/n/blurred-colors-minimalistic-simple-simple-background-1600x1200.jpg');
@@ -427,9 +429,10 @@ body {
 	background-size:auto, cover;
 }
 .unicolor {
-	background:black;
-	font-size:0.6em;
-	color:rgba(255, 255, 255, 0.5);
+	min-height:100%;
+	background:#faf5f3;
+	font-size:1em;
+	color:rgba(0, 0, 0, 0.5);
 }
 .button {
 	font-size:0.9em;
@@ -453,12 +456,20 @@ h1 {
 	color:rgba(0, 0, 0, 0.5);
 	text-transform:uppercase;
 	font-weight:100;
-	line-height:0.9em;
+	line-height:1em;
 }
-h1 span {
-	font-size:0.75em;
+.big {
+	font-weight:300;
+}
+h2 {
+	font-size:0.7em;
+	color:rgba(0, 0, 0, 0.5);
+	text-transform:uppercase;
 	font-weight:700;
-	letter-spacing:0.4em;
+	line-height:1em;
+	margin-top:-2em;
+	padding-bottom:1em;
+	letter-spacing:0.6em;
 }
 #logo {
 	display:inline-block;
@@ -503,8 +514,8 @@ nav a {
 */
 #ac_sider {
 	display:none;
-	position:absolute;
-	left:-260px;
+	position:fixed;
+	left:0;
 	top:0;
 	height:100%;
 	background:rgba(250, 245, 243, 0.85);

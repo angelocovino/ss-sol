@@ -55,13 +55,13 @@
 		var tempo = 150;
 		$("#menu_activator").click(function(){
 			if(menu_opened()){
-				$("body")
+				$("body, #menu")
 					.animate({"left":"0"},tempo, function(){
 						$(this).css({"overflow-x":"auto"});
 					});
 				//$("#menu").animate({"left":"0"},tempo);
 			}else{
-				$("body")
+				$("body, #menu")
 					.animate({"left":"260px"},tempo)
 					.css({"overflow-x":"hidden"});
 				//$("#menu").animate({"left":"-260px"},tempo);
@@ -88,7 +88,15 @@
 	</section>
 	
 	<section class="corpo">
-		<h1>Angelo Covino</h1><br />
+		<h1>Angelo Covino</h1>
+		<h2>web developer</h2>
+		<a class="button">lorem ipsum</a><br />
+	</section>
+	
+	<section class="unicolor">
+	asd
+		<h1>Angelo Covino</h1>
+		<h2>web developer</h2>
 		<a class="button">lorem ipsum</a><br />
 	</section>
 </body>

@@ -20,10 +20,13 @@
 		$images_path="images/";
 		$stylesheet_path="stylesheet/";
 	?>
+	<!--
 	<link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Advent+Pro:400,100,200,300,500,600,700' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" type="image/x-icon" href="<?php echo $images_path; ?>icono.ico" />
 	<link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:300,400'>
+	-->
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
 	<link rel='stylesheet' type='text/css' href='<?php echo $stylesheet_path; ?>stylesheet.css'>
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script type="text/javascript">
@@ -42,9 +45,6 @@
 			});
 		});
 	</script>
-	<!--
-	<link rel="stylesheet" href="sidr/stylesheets/jquery.sidr.dark.css">
-	-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
@@ -78,6 +78,9 @@
 			<li class="active"><a href="#">portfolio</a></li>
 			<li><a href="#">contacts</a></li>
 		</ul>
+		<div id="copyright">
+			&copy; 2014 - 2015 Angelo Covino
+		</div>
 	</div>
 	
 	<section id="menu">
@@ -85,25 +88,8 @@
 	</section>
 	
 	<section class="corpo">
-		lorem ipsum<br />
-		<div class="button">lorem ipsum</div><br />
+		<h1>Angelo Covino</h1><br />
+		<a class="button">lorem ipsum</a><br />
 	</section>
-	<!--
-	<section class="unicolor">
-		lorem ipsum
-	</section>
-	
-	<section class="corpo bg1">
-		lorem ipsum
-	</section>
-	-->
-	
-	<footer id="copyright">
-		&copy; 2014 - 2015 Angelo Covino
-	</footer>
-	
-	<!--
-	<script src="sidr/jquery.sidr.min.js"></script>
-	-->
 </body>
 </html>

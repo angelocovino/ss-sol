@@ -378,10 +378,10 @@ body {
 	top:0;
 	left:0;
 	overflow-x:auto;
-	font-family:'Advent Pro';
-	font-family:'Karla';
-	font-weight:200;
-	font-weight:400;
+	//font-family:'Advent Pro';
+	//font-family:'Karla';
+	font-family:'Lato';
+	font-weight:300;
 	font-size:20px;
 	text-align:center;
 	line-height:1.5em;
@@ -393,19 +393,21 @@ body {
 	top:0;
 	left:0;
 	display:inline-block;
-	background:#FAF5F3;
-	opacity:0.85;
+	background:rgba(250, 245, 243, 0.85);
 	text-align:left;
 	padding:0.5em 1em;
 	font-size:0.8em;
 	color:rgba(0, 0, 0, 0.5);
 	text-transform:uppercase;
 }
+#menu a {
+}
+#menu a:hover {
+	color:black;
+}
 .corpo {
 	display:inline-block;
-	width:500px;
 	font-size:0.8em;
-	min-height:75%;
 	color:black;
 	padding:3em 0em;
 	box-sizing:border-box;
@@ -431,11 +433,32 @@ body {
 }
 .button {
 	font-size:0.9em;
+	text-transform:lowercase;
 	padding:0.5em 1em;
 	display:inline-block;
 	border-radius:0.25em;
+	border:1px solid rgba(255, 255, 255, 0.5);
+	background:transparent;
+	color:rgba(255, 255, 255, 1);
+	transition:all 0.25s ease;
+
+}
+.button:hover {
+	border:1px solid transparent;
 	background:rgba(255, 255, 255, 0.5);
-	color:black;
+	color:rgba(0, 0, 0, 0.5);
+}
+h1 {
+	font-size:3em;
+	color:rgba(0, 0, 0, 0.5);
+	text-transform:uppercase;
+	font-weight:100;
+	line-height:0.9em;
+}
+h1 span {
+	font-size:0.75em;
+	font-weight:700;
+	letter-spacing:0.4em;
 }
 #logo {
 	display:inline-block;
@@ -444,9 +467,9 @@ body {
 	background:rgba(190, 68, 68, 0.9);
 }
 #copyright {
+	border-top:3px double gray;
 	text-align:center;
-	color:rgba(255, 255, 255, 0.25);
-	padding:0em 0.75em;
+	color:rgba(0, 0, 0, 0.5);
 	font-size:0.6em;
 }
 /*
@@ -484,25 +507,31 @@ nav a {
 	left:-260px;
 	top:0;
 	height:100%;
-	background:rgba(255, 255, 255, 0.5);
+	background:rgba(250, 245, 243, 0.85);
 	width:260px;
 	border-right:1px solid gray;
+	padding:0.25em 0.5em;
+	box-sizing:border-box;
 }
 #ac_sider ul {
 	list-style:none;
 }
 #ac_sider ul li {
-	margin:0 0.25em;
 }
 #ac_sider ul li:not(:last-child) {
-	border-bottom:1px solid black;
+	border-bottom:1px solid gray;
 }
 #ac_sider ul li a {
 	display:block;
 	font-size:0.6em;
 	text-transform:uppercase;
 	color:rgba(0, 0, 0, 0.5);
+	transition:all 0.25s ease;
+	margin:0.25em 0em;
 }
 #ac_sider ul li a:hover {
-	color:rgba(0, 0, 0, 1);
+	color:rgba(0, 0, 0, 0.9);
+	//background:rgba(0, 0, 0, 0.5);
 }
+#ac_sider ul li a:hover:before {content:'- ';}
+#ac_sider ul li a:hover:after {content:' -';}

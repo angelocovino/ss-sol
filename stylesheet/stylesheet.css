@@ -440,16 +440,16 @@ body {
 	padding:0.5em 1em;
 	display:inline-block;
 	border-radius:0.25em;
-	border:1px solid rgba(255, 255, 255, 0.5);
+	border:1px solid rgba(0, 0, 0, 0.5);
 	background:transparent;
-	color:rgba(255, 255, 255, 1);
+	color:rgba(0, 0, 0, 0.75);
 	transition:all 0.25s ease;
 
 }
 .button:hover {
 	border:1px solid transparent;
-	background:rgba(255, 255, 255, 0.5);
-	color:rgba(0, 0, 0, 0.5);
+	background:rgba(0, 0, 0, 0.25);
+	color:rgba(255, 255, 255, 0.5);
 }
 h1 {
 	font-size:3em;
@@ -457,6 +457,16 @@ h1 {
 	text-transform:uppercase;
 	font-weight:100;
 	line-height:1em;
+	text-shadow:1px 1px 1px white;
+}
+.carpet {
+	display:inline-block;
+	margin:0em 1em;
+	margin-bottom:1em;
+	padding:0.5em 1em;
+	width:calc(100% - 2em);
+	box-sizing:border-box;
+	//background:rgba(250, 245, 243, 0.4);
 }
 .big {
 	font-weight:300;
@@ -465,11 +475,13 @@ h2 {
 	font-size:0.7em;
 	color:rgba(0, 0, 0, 0.5);
 	text-transform:uppercase;
-	font-weight:700;
-	line-height:1em;
+	font-weight:500;
+	line-height:1.3em;
 	margin-top:-2em;
 	padding-bottom:1em;
-	letter-spacing:0.6em;
+	letter-spacing:1.3em;
+	padding-left:1.5em;
+	text-shadow:1px 1px 1px white;
 }
 #logo {
 	display:inline-block;
@@ -518,11 +530,18 @@ nav a {
 	left:0;
 	top:0;
 	height:100%;
-	background:rgba(250, 245, 243, 0.85);
+	//background:rgba(250, 245, 243, 0.85);
 	width:260px;
 	border-right:1px solid gray;
 	padding:0.25em 0.5em;
 	box-sizing:border-box;
+	
+	background-color:white, transparent;
+	background-image:url('../images/bg1.png'), url('../images/n/017.jpg');
+	background-repeat:repeat, no-repeat;
+	background-position:0, 0;
+	background-attachment:fixed, fixed;
+	background-size:auto, cover;
 }
 #ac_sider ul {
 	list-style:none;

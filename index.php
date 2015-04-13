@@ -90,7 +90,11 @@
 	<section class="corpo">
 		<h1>Angelo Covino</h1>
 		<h2>web developer</h2>
-		<a class="button">lorem ipsum</a><br />
+		<section class="carpet">
+			asd
+			<br />
+			<a class="button">lorem ipsum</a>
+		</section><br />
 	</section>
 	
 	<section class="unicolor">

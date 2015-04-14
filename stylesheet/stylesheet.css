@@ -385,6 +385,9 @@ body {
 	font-size:20px;
 	text-align:center;
 	line-height:1.5em;
+	background:url('../images/n/017.jpg') top left no-repeat fixed transparent;
+	background-size:cover;
+	color:rgba(0, 0, 0, 0.5);
 }
 #menu {
 	position:fixed;
@@ -399,20 +402,16 @@ body {
 	text-transform:uppercase;
 	border-right:1px solid gray;
 	border-bottom:1px solid gray;
+	cursor:pointer;
 }
-#menu a {
-}
-#menu a:hover {
+#menu:hover a {
 	color:black;
 }
 .corpo {
 	min-height:100%;
 	font-size:0.8em;
-	color:black;
 	padding:3em 0em;
 	box-sizing:border-box;
-	background:url('../images/n/017.jpg') top left no-repeat fixed transparent;
-	background-size:cover;
 }
 .bbg1 {
 	background-image:url('../images/bg.png'), url('../images/n/blurred-colors-minimalistic-simple-simple-background-1600x1200.jpg');
@@ -449,15 +448,17 @@ body {
 .button:hover {
 	border:1px solid transparent;
 	background:rgba(0, 0, 0, 0.25);
-	color:rgba(255, 255, 255, 0.5);
+	color:rgba(255, 255, 255, 0.75);
 }
 h1 {
+	display:inline-block;
 	font-size:3em;
 	color:rgba(0, 0, 0, 0.5);
 	text-transform:uppercase;
 	font-weight:100;
 	line-height:1em;
 	text-shadow:1px 1px 1px white;
+	//border-bottom:1px solid rgba(250, 245, 243, 0.85);
 }
 .carpet {
 	display:inline-block;
@@ -466,7 +467,6 @@ h1 {
 	padding:0.5em 1em;
 	width:calc(100% - 2em);
 	box-sizing:border-box;
-	//background:rgba(250, 245, 243, 0.4);
 }
 .big {
 	font-weight:300;
@@ -488,12 +488,6 @@ h2 {
 	padding:1em 1em;
 	border-radius:50%;
 	background:rgba(190, 68, 68, 0.9);
-}
-#copyright {
-	border-top:3px double gray;
-	text-align:center;
-	color:rgba(0, 0, 0, 0.5);
-	font-size:0.6em;
 }
 /*
 nav {
@@ -530,26 +524,28 @@ nav a {
 	left:0;
 	top:0;
 	height:100%;
-	//background:rgba(250, 245, 243, 0.85);
+	background:rgba(250, 245, 243, 0.85);
 	width:260px;
 	border-right:1px solid gray;
 	padding:0.25em 0.5em;
 	box-sizing:border-box;
-	
-	background-color:white, transparent;
-	background-image:url('../images/bg1.png'), url('../images/n/017.jpg');
+	/*
+	background-image:linear-gradient(to bottom, rgba(250, 245, 243, 0.85), rgba(250, 245, 243, 0.85)), url('../images/n/017.jpg');
 	background-repeat:repeat, no-repeat;
 	background-position:0, 0;
 	background-attachment:fixed, fixed;
 	background-size:auto, cover;
+	*/
 }
 #ac_sider ul {
 	list-style:none;
+	border-top:2px solid rgba(0, 0, 0, 0.1);
+	border-bottom:2px solid rgba(0, 0, 0, 0.1);
 }
 #ac_sider ul li {
 }
 #ac_sider ul li:not(:last-child) {
-	border-bottom:1px solid gray;
+	border-bottom:1px solid rgba(0, 0, 0, 0.1);
 }
 #ac_sider ul li a {
 	display:block;
@@ -558,10 +554,36 @@ nav a {
 	color:rgba(0, 0, 0, 0.5);
 	transition:all 0.25s ease;
 	margin:0.25em 0em;
+	letter-spacing:0.1em;
 }
 #ac_sider ul li a:hover {
-	color:rgba(0, 0, 0, 0.9);
+	color:rgba(0, 0, 0, 0.6);
 	//background:rgba(0, 0, 0, 0.5);
+	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.2);
 }
+/*
 #ac_sider ul li a:hover:before {content:'- ';}
 #ac_sider ul li a:hover:after {content:' -';}
+*/
+#ac_sider_title {
+	text-align:center;
+	color:rgba(0, 0, 0, 0.5);
+	font-size:0.9em;
+	padding:1em 0em;
+	line-height:0.75em;
+	padding-bottom:0;
+}
+#ac_sider_subtitle {
+	text-align:center;
+	color:rgba(0, 0, 0, 0.5);
+	font-size:0.6em;
+	letter-spacing:0.1em;
+	padding:1em 0em;
+	padding-top:0;
+}
+#ac_sider_copyright {
+	text-align:center;
+	color:rgba(0, 0, 0, 0.5);
+	font-size:0.6em;
+	padding:0.6em 0em;
+}

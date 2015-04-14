@@ -28,32 +28,33 @@
 	-->
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
 	<link rel='stylesheet' type='text/css' href='<?php echo $stylesheet_path; ?>stylesheet.css'>
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script type="text/javascript">
-		/* SCROLL TO ANCHORS */
-		$(document).ready(function(){
-			$('a[href^="#"]').click(function(e){
-				e.preventDefault();
-				var target = this.hash;
-				var $target = $(target);
-
-				$('html, body').stop().animate({
-					'scrollTop': $target.offset().top
-				}, 900, 'swing', function(){
-					window.location.hash = target;
-				});
-			});
-		});
-	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script type="text/javascript">
-	$(document).ready(function() {
+	$(document).ready(function(){
+		$("#ac_sider li").click(function(){
+			$("#menu").delay(1000).click();
+		});
+		/* SCROLL TO ANCHORS */
+		$('a[href^="#"]').click(function(e){
+			e.preventDefault();
+			var target = this.hash;
+			var $target = $(target);
+
+			$('html, body').animate({
+				'scrollTop': $target.offset().top
+			}, 900, 'swing', function(){
+				window.location.hash = target;
+			});
+		});
+		/*
+		*/
+		
 		//$("#ac_sider").css({"padding-top":""+$("#menu").height()+"px"});
 		var menu_opened = function(){
 			return ($("#ac_sider").is(":visible"));
 		};
 		var tempo = 150;
-		$("#menu_activator").click(function(){
+		$("#menu").click(function(){
 			if(menu_opened()){
 				$("body, #menu")
 					.animate({"left":"0"},tempo, function(){
@@ -66,6 +67,7 @@
 					.css({"overflow-x":"hidden"});
 				//$("#menu").animate({"left":"-260px"},tempo);
 			}
+			//$("#ac_sider").fadeToggle(tempo);
 			$("#ac_sider").animate({"width":"toggle"},tempo);
 		});
 	});
@@ -73,31 +75,34 @@
 </head>
 <body>
 	<div id="ac_sider">
+		<div id="ac_sider_title">Angelo Covino</div>
+		<div id="ac_sider_subtitle">personal website</div>
 		<ul>
-			<li><a href="#">works</a></li>
-			<li class="active"><a href="#">portfolio</a></li>
-			<li><a href="#">contacts</a></li>
+			<li><a href="#works">works</a></li>
+			<li class="active"><a href="#portfolio">portfolio</a></li>
+			<li><a href="#contacts">contacts</a></li>
 		</ul>
-		<div id="copyright">
+		<div id="ac_sider_copyright">
 			&copy; 2014 - 2015 Angelo Covino
 		</div>
 	</div>
 	
 	<section id="menu">
-		<a id="menu_activator">&#9776;</a>
+		<a>&#9776;</a>
 	</section>
 	
 	<section class="corpo">
 		<h1>Angelo Covino</h1>
 		<h2>web developer</h2>
-		<section class="carpet">
 			asd
 			<br />
 			<a class="button">lorem ipsum</a>
+		<section class="carpet">
+		asd
 		</section><br />
 	</section>
 	
-	<section class="unicolor">
+	<section id="works" class="unicolor">
 	asd
 		<h1>Angelo Covino</h1>
 		<h2>web developer</h2>

@@ -385,7 +385,8 @@ body {
 	font-size:20px;
 	text-align:center;
 	line-height:1.5em;
-	background:url('../images/n/017.jpg') top left no-repeat fixed transparent;
+	//background:url('../images/n/017.jpg') top left no-repeat fixed transparent;
+	background:url('../images/n/1767821.jpg') top left no-repeat fixed transparent;
 	background-size:cover;
 	color:rgba(0, 0, 0, 0.5);
 }
@@ -404,7 +405,7 @@ body {
 	border-bottom:1px solid gray;
 	cursor:pointer;
 }
-#menu:hover a {
+#menu:hover {
 	color:black;
 }
 .corpo {

@@ -29,22 +29,24 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
 	<link rel='stylesheet' type='text/css' href='<?php echo $stylesheet_path; ?>stylesheet.css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!--
+	<script src="development/jquery-1.11.0.min.js"></script>
+	-->
 	<script type="text/javascript">
 	$(document).ready(function(){
-		$("#ac_sider li").click(function(){
-			$("#menu").delay(1000).click();
-		});
 		/* SCROLL TO ANCHORS */
-		$('a[href^="#"]').click(function(e){
+		$('#ac_sider li a[href^="#"]').click(function(e){
 			e.preventDefault();
 			var target = this.hash;
 			var $target = $(target);
-
-			$('html, body').animate({
-				'scrollTop': $target.offset().top
-			}, 900, 'swing', function(){
-				window.location.hash = target;
-			});
+			if(window.location.hash!=target){
+				$('html, body').animate({
+					'scrollTop': $target.offset().top
+				}, 900, 'swing', function(){
+					$("#menu").click();
+					window.location.hash = target;
+				});
+			}else{$("#menu").click();}
 		});
 		/*
 		*/
@@ -54,21 +56,22 @@
 			return ($("#ac_sider").is(":visible"));
 		};
 		var tempo = 150;
-		$("#menu").click(function(){
+		$("#menu").click(function(wait_time){
 			if(menu_opened()){
-				$("body, #menu")
+				$("body, #menu, #totop")
 					.animate({"left":"0"},tempo, function(){
 						$(this).css({"overflow-x":"auto"});
 					});
 				//$("#menu").animate({"left":"0"},tempo);
+				$("#ac_sider").fadeOut(tempo);
 			}else{
-				$("body, #menu")
+				$("body, #menu, #totop")
 					.animate({"left":"260px"},tempo)
 					.css({"overflow-x":"hidden"});
 				//$("#menu").animate({"left":"-260px"},tempo);
+				$("#ac_sider").fadeIn(tempo);
 			}
-			//$("#ac_sider").fadeToggle(tempo);
-			$("#ac_sider").animate({"width":"toggle"},tempo);
+			//$("#ac_sider").animate({"width":"toggle"},tempo);
 		});
 	});
 	</script>
@@ -78,6 +81,7 @@
 		<div id="ac_sider_title">Angelo Covino</div>
 		<div id="ac_sider_subtitle">personal website</div>
 		<ul>
+			<li><a href="#">home</a></li>
 			<li><a href="#works">works</a></li>
 			<li class="active"><a href="#portfolio">portfolio</a></li>
 			<li><a href="#contacts">contacts</a></li>
@@ -88,7 +92,7 @@
 	</div>
 	
 	<section id="menu">
-		<a>&#9776;</a>
+		&#9776;
 	</section>
 	
 	<section class="corpo">

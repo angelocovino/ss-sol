@@ -37,16 +37,33 @@
 		/* SCROLL TO ANCHORS */
 		$('#ac_sider li a[href^="#"]').click(function(e){
 			e.preventDefault();
-			var target = this.hash;
-			var $target = $(target);
-			//if(window.location.hash!=target){
+			if(!this.hash){
 				$('html, body').animate({
-					'scrollTop': $target.offset().top
-				}, 900, 'swing', function(){
-					$("#menu").click();
-					//window.location.hash = target;
+					"scrollTop" : 0
+				}, 500, "swing", function(){
+					ac_sider_close();
+					window.location.href = "#";
 				});
-			//}else{$("#menu").click();}
+			}else{
+				var target = this.hash;
+				var $target = $(target);
+				//if(window.location.hash!=target){
+					$('html, body').animate({
+						"scrollTop" : $target.offset().top
+					}, 500, "swing", function(){
+						ac_sider_close();
+						window.location.hash = target;
+					});
+				//}else{$("#menu").click();}
+			}
+		});
+		
+		$(window).scroll(function(){
+			if($(this).scrollTop()>0){
+				$("#ac_sider_totop").fadeIn(tempo);
+			}else{
+				$("#ac_sider_totop").fadeOut(tempo);
+			}
 		});
 		
 		var menu_opened = false;
@@ -73,11 +90,15 @@
 			//$("#ac_sider").animate({"width":"toggle"},tempo);
 		});
 		$("body").click(function(e){
-			var target = $(e.target);
-			if(!target.is("#menu") && e.pageX>260 && menu_opened){
-				$("#menu").click();
+			//var target = $(e.target);
+			//if(!target.is("#menu") && e.pageX>260 && menu_opened){
+			if(e.pageX>260){
+				ac_sider_close();
 			}
 		});
+		function ac_sider_close(){
+			if(menu_opened){$("#menu").click();}
+		}
 	});
 	</script>
 </head>
@@ -86,10 +107,10 @@
 		<div id="ac_sider_title">Angelo Covino</div>
 		<div id="ac_sider_subtitle">personal website</div>
 		<ul>
-			<li><a href="#">home</a></li>
 			<li><a href="#works">works</a></li>
 			<li class="active"><a href="#portfolio">portfolio</a></li>
 			<li><a href="#contacts">contacts</a></li>
+			<li id="ac_sider_totop"><a href="#">return to top</a></li>
 		</ul>
 		<div id="ac_sider_copyright">
 			&copy; 2014 - 2015 Angelo Covino

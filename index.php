@@ -60,9 +60,9 @@
 		
 		$(window).scroll(function(){
 			if($(this).scrollTop()>0){
-				$("#ac_sider_totop").fadeIn(tempo);
+				$("#ac_sider_totop").slideDown(300);
 			}else{
-				$("#ac_sider_totop").fadeOut(tempo);
+				$("#ac_sider_totop").slideUp(300);
 			}
 		});
 		
@@ -71,20 +71,26 @@
 		$("#menu").click(function(){
 			if(menu_opened){
 				$("body")
-					.animate({"left":"0"},tempo, function(){
+					.animate({
+						"left":"0",
+						"padding-left":"50px"
+					},tempo, function(){
 						$(this).css({"overflow-x":"auto"});
 					});
 				//$("#menu").animate({"left":"0"},tempo);
 				$("#ac_sider").fadeOut(tempo);
-				$("#menu").fadeIn(tempo);
+				$("#menu, #left_line").fadeIn(tempo);
 				menu_opened = false;
 			}else{
 				$("body")
-					.animate({"left":"260px"},tempo)
+					.animate({
+						"left":"260px",
+						"padding-left":"0"
+					},tempo)
 					.css({"overflow-x":"hidden"});
 				//$("#menu").animate({"left":"-260px"},tempo);
 				$("#ac_sider").fadeIn(tempo);
-				$("#menu").fadeOut(tempo);
+				$("#menu, #left_line").fadeOut(tempo);
 				menu_opened = true;
 			}
 			//$("#ac_sider").animate({"width":"toggle"},tempo);
@@ -103,6 +109,8 @@
 	</script>
 </head>
 <body>
+	<div id="left_line">&nbsp;</div>
+
 	<div id="ac_sider">
 		<div id="ac_sider_title">Angelo Covino</div>
 		<div id="ac_sider_subtitle">personal website</div>

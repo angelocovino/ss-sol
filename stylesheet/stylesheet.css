@@ -551,10 +551,21 @@ nav a {
 	border-top:2px solid rgba(250, 245, 243, 0.25);
 	border-bottom:2px solid rgba(250, 245, 243, 0.25);
 }
-#ac_sider ul li {
-}
-#ac_sider ul li:not(:last-child):not(:nth-last-child(2)) {
+
+#ac_sider ul#menu_main li:not(:last-child):not(:nth-last-child(2)),
+#ac_sider ul:not(#menu_main) li:not(:last-child) {
 	border-bottom:1px solid rgba(250, 245, 243, 0.25);
+}
+#ac_sider ul#menu_contact label {
+	display:block;
+	text-align:left;
+	font-size:0.7em;
+	padding:0em;
+	padding-top:0.5em;
+	line-height:0.5em;
+}
+#ac_sider ul#menu_contact input {
+	width:100%;
 }
 #ac_sider ul li a {
 	display:block;

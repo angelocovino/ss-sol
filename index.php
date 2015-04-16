@@ -112,7 +112,7 @@
 		<section>
 			<div id="ac_sider_title">Angelo Covino</div>
 			<div id="ac_sider_subtitle">personal website</div>
-			<ul>
+			<ul id="menu_main">
 				<li><a href="#works">works</a></li>
 				<li class="active"><a href="#portfolio">portfolio</a></li>
 				<li><a href="#contacts">contacts</a></li>
@@ -123,7 +123,26 @@
 			</div>
 		</section>
 		<section>
-			asd asd asd asd
+			<div id="ac_sider_title">Contact me</div>
+			<div id="ac_sider_subtitle">just fill the form</div>
+			<ul id="menu_contact">
+				<li>
+					<label for="fname">first name</label>
+					<input name="fname" type="text" />
+				</li>
+				<li>
+					<label for="lname">last name</label>
+					<input name="lname" type="text" />
+				</li>
+				<li>
+					<label for="email">email</label>
+					<input name="email" type="text" />
+				</li>
+				<li>
+					<label for="cont">message</label>
+					<textarea name="cont"></textarea>
+				</li>
+			</ul>
 		</section>
 	</div>
 	

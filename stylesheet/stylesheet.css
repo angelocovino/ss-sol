@@ -414,6 +414,10 @@ body {
 	cursor:pointer;
 	border-bottom:1px solid rgba(250, 245, 243, 0.25);
 }
+#menu_tiles section img {
+	width:20px;
+	vertical-align:middle;
+}
 #menu_tiles section:hover {
 	color:white;
 	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.2);

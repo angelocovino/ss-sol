@@ -69,7 +69,7 @@
 		var menu_opened = false;
 		var tempo = 150;
 		$("#menu_tiles > section").click(function(){
-			$("#ac_sider > section").fadeOut(tempo);
+			$("#ac_sider > section").fadeOut(0);
 			if(menu_opened){
 				$("body")
 					.animate({
@@ -78,7 +78,6 @@
 					},tempo, function(){
 						$(this).css({"overflow-x":"auto"});
 					});
-				//$("#menu").animate({"left":"0"},tempo);
 				$("#ac_sider").fadeOut(tempo);
 				$("#menu_tiles").fadeIn(tempo);
 				menu_opened = false;
@@ -89,13 +88,11 @@
 						"padding-left":"0"
 					},tempo)
 					.css({"overflow-x":"hidden"});
-				//$("#menu").animate({"left":"-260px"},tempo);
 				$("#ac_sider").fadeIn(tempo);
 				$("#ac_sider > section:nth-child("+($(this).index()+1)+")").fadeIn(0);
 				$("#menu_tiles").fadeOut(tempo);
 				menu_opened = true;
 			}
-			//$("#ac_sider").animate({"width":"toggle"},tempo);
 		});
 		$("body").click(function(e){
 			//var target = $(e.target);
@@ -111,8 +108,6 @@
 	</script>
 </head>
 <body>
-	<div id="left_line">&nbsp;</div>
-
 	<div id="ac_sider">
 		<section>
 			<div id="ac_sider_title">Angelo Covino</div>
@@ -134,8 +129,7 @@
 	
 	<section id="menu_tiles">
 		<section id="menu">&#9776;</section>
-		<section>&copy;</section>
-		<section>&hearts;</section>
+		<section><img src="images/email-24.png" /></section>
 	</section>
 	
 	<section class="corpo">

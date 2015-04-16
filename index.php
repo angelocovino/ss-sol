@@ -68,18 +68,19 @@
 		
 		var menu_opened = false;
 		var tempo = 150;
-		$("#menu").click(function(){
+		$("#menu_tiles > section").click(function(){
+			$("#ac_sider > section").fadeOut(tempo);
 			if(menu_opened){
 				$("body")
 					.animate({
 						"left":"0",
-						"padding-left":"50px"
+						"padding-left":"45px"
 					},tempo, function(){
 						$(this).css({"overflow-x":"auto"});
 					});
 				//$("#menu").animate({"left":"0"},tempo);
 				$("#ac_sider").fadeOut(tempo);
-				$("#menu, #left_line").fadeIn(tempo);
+				$("#menu_tiles").fadeIn(tempo);
 				menu_opened = false;
 			}else{
 				$("body")
@@ -90,7 +91,8 @@
 					.css({"overflow-x":"hidden"});
 				//$("#menu").animate({"left":"-260px"},tempo);
 				$("#ac_sider").fadeIn(tempo);
-				$("#menu, #left_line").fadeOut(tempo);
+				$("#ac_sider > section:nth-child("+($(this).index()+1)+")").fadeIn(0);
+				$("#menu_tiles").fadeOut(tempo);
 				menu_opened = true;
 			}
 			//$("#ac_sider").animate({"width":"toggle"},tempo);
@@ -112,21 +114,28 @@
 	<div id="left_line">&nbsp;</div>
 
 	<div id="ac_sider">
-		<div id="ac_sider_title">Angelo Covino</div>
-		<div id="ac_sider_subtitle">personal website</div>
-		<ul>
-			<li><a href="#works">works</a></li>
-			<li class="active"><a href="#portfolio">portfolio</a></li>
-			<li><a href="#contacts">contacts</a></li>
-			<li id="ac_sider_totop"><a href="#">return to top</a></li>
-		</ul>
-		<div id="ac_sider_copyright">
-			&copy; 2014 - 2015 Angelo Covino
-		</div>
+		<section>
+			<div id="ac_sider_title">Angelo Covino</div>
+			<div id="ac_sider_subtitle">personal website</div>
+			<ul>
+				<li><a href="#works">works</a></li>
+				<li class="active"><a href="#portfolio">portfolio</a></li>
+				<li><a href="#contacts">contacts</a></li>
+				<li id="ac_sider_totop"><a href="#">return to top</a></li>
+			</ul>
+			<div id="ac_sider_copyright">
+				&copy; 2014 - 2015 Angelo Covino
+			</div>
+		</section>
+		<section>
+			asd asd asd asd
+		</section>
 	</div>
 	
-	<section id="menu">
-		&#9776;
+	<section id="menu_tiles">
+		<section id="menu">&#9776;</section>
+		<section>&copy;</section>
+		<section>&hearts;</section>
 	</section>
 	
 	<section class="corpo">

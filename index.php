@@ -69,29 +69,31 @@
 		var menu_opened = false;
 		var tempo = 150;
 		$("#menu_tiles > section").click(function(){
-			$("#ac_sider > section").fadeOut(0);
-			if(menu_opened){
-				$("body")
-					.animate({
-						"left":"0",
-						"padding-left":"45px"
-					},tempo, function(){
-						$(this).css({"overflow-x":"auto"});
-					});
-				$("#ac_sider").fadeOut(tempo);
-				$("#menu_tiles").fadeIn(tempo);
-				menu_opened = false;
-			}else{
-				$("body")
-					.animate({
-						"left":"260px",
-						"padding-left":"0"
-					},tempo)
-					.css({"overflow-x":"hidden"});
-				$("#ac_sider").fadeIn(tempo);
-				$("#ac_sider > section:nth-child("+($(this).index()+1)+")").fadeIn(0);
-				$("#menu_tiles").fadeOut(tempo);
-				menu_opened = true;
+			if($(this).children("a").length < 1){
+				$("#ac_sider > section").fadeOut(0);
+				if(menu_opened){
+					$("body")
+						.animate({
+							"left":"0",
+							"padding-left":"45px"
+						},tempo, function(){
+							$(this).css({"overflow-x":"auto"});
+						});
+					$("#ac_sider").fadeOut(tempo);
+					$("#menu_tiles").fadeIn(tempo);
+					menu_opened = false;
+				}else{
+					$("body")
+						.animate({
+							"left":"260px",
+							"padding-left":"0"
+						},tempo)
+						.css({"overflow-x":"hidden"});
+					$("#ac_sider").fadeIn(tempo);
+					$("#ac_sider > section:nth-child("+($(this).index()+1)+")").fadeIn(0);
+					$("#menu_tiles").fadeOut(tempo);
+					menu_opened = true;
+				}
 			}
 		});
 		$("body").click(function(e){
@@ -149,6 +151,11 @@
 	<section id="menu_tiles">
 		<section id="menu">&#9776;</section>
 		<section><img src="images/email-24.png" /></section>
+		<!--
+		<section><img src="images/user1461.png" /></section>
+		-->
+		<section><a href="//www.behance.net/angelocovino"><img src="images/behance-48.png" /></a></section>
+		<section><a href="//github.com/angelocovino"><img src="images/github-48.png" /></a></section>
 	</section>
 	
 	<section class="corpo">

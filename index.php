@@ -161,19 +161,21 @@
 	<section class="corpo">
 		<h1>Angelo Covino</h1>
 		<h2>web developer</h2>
-			asd
-			<br />
-			<a class="button">lorem ipsum</a>
-		<section class="carpet">
 		asd
-		</section><br />
+		<br />
+		<a class="button">work with me</a>
 	</section>
 	
 	<section id="works" class="unicolor">
-	asd
-		<h1>Angelo Covino</h1>
-		<h2>web developer</h2>
-		<a class="button">lorem ipsum</a><br />
+		works
+	</section>
+	
+	<section id="portfolio" class="corpo">
+		portfolio
+	</section>
+	
+	<section id="contacts" class="unicolor">
+		contacts
 	</section>
 </body>
 </html>

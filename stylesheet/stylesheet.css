@@ -377,7 +377,8 @@ body {
 	position:relative;
 	top:0;
 	left:0;
-	overflow-x:auto;
+	//overflow-x:auto;
+	overflow-x:hidden;
 	//font-family:'Advent Pro';
 	//font-family:'Karla';
 	font-family:'Lato';
@@ -430,36 +431,37 @@ body {
 	color:white;
 	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.2);
 }
-.corpo {
-	min-height:100%;
-	font-size:0.8em;
-	color:white;
-	padding:3em 0em;
-	box-sizing:border-box;
-}
+.corpo,
 .unicolor {
 	min-height:100%;
+	font-size:0.8em;
+	padding:1em 0em;
+	box-sizing:border-box;
+}
+.corpo {
+	color:white;
+}
+.unicolor {
 	//background:#faf5f3;
 	background:rgba(250, 245, 243, 1);
-	font-size:1em;
 	color:rgba(0, 0, 0, 0.5);
 }
 .button {
-	font-size:0.9em;
-	text-transform:lowercase;
+	font-size:0.7em;
+	text-transform:uppercase;
+	letter-spacing:0.1em;
 	padding:0.5em 1em;
 	display:inline-block;
-	border-radius:0.25em;
-	border:1px solid rgba(0, 0, 0, 0.5);
-	background:transparent;
-	color:rgba(0, 0, 0, 0.75);
+	border:1px solid rgba(250, 245, 243, 0.1);
+	background:rgba(0, 0, 0, 0.2);
+	color:rgba(255, 255, 255, 0.75);
 	transition:all 0.25s ease;
+	text-shadow:1px 1px 1px rgba(0, 0, 0, 0);
 
 }
 .button:hover {
-	border:1px solid transparent;
-	background:rgba(0, 0, 0, 0.25);
-	color:rgba(255, 255, 255, 0.75);
+	border:1px solid rgba(250, 245, 243, 0.5);
+	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 h1 {
 	display:inline-block;
@@ -470,13 +472,6 @@ h1 {
 	line-height:1em;
 	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.25);
 	//border-bottom:1px solid rgba(250, 245, 243, 0.85);
-}
-.carpet {
-	display:inline-block;
-	padding:0.5em 1em;
-	background:rgba(0, 0, 0, 0.2);
-	width:100%;
-	box-sizing:border-box;
 }
 .big {
 	font-weight:300;

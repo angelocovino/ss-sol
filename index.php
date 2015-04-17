@@ -58,11 +58,40 @@
 			}
 		});
 		
-		$(window).scroll(function(){
+		// SCROLLING STUFF
+		$(window).scroll(function(e){
+			// SCROLL TO TOP
 			if($(this).scrollTop()>0){
 				$("#ac_sider_totop").slideDown(300);
 			}else{
 				$("#ac_sider_totop").slideUp(300);
+			}
+			// STOP SCROLLING IF MENU IS OPEN
+			if(menu_opened){
+				e.stopPropagation();
+				e.preventDefault();
+			}
+		});
+		// BLOCK TOUCH FOR MOBILE
+		$('html, body').on('touchstart touchmove', function(e){ 
+			if(menu_opened){
+				e.preventDefault();
+			}
+		});
+		// KEYDOWN EVENTS
+		$(document).keydown(function(e){
+			switch(e.which) {
+				case 37: // left
+				case 39: // right
+					e.preventDefault();
+				break;
+				case 38: // up
+				case 40: // down
+					if(menu_opened){
+						e.preventDefault();
+					}
+				break;
+				default: return;
 			}
 		});
 		
@@ -77,7 +106,7 @@
 							"left":"0",
 							"padding-left":"45px"
 						},tempo, function(){
-							$(this).css({"overflow-x":"auto"});
+							$(this).css({"overflow-y":"auto"});
 						});
 					$("#ac_sider").fadeOut(tempo);
 					$("#menu_tiles").fadeIn(tempo);
@@ -88,7 +117,7 @@
 							"left":"260px",
 							"padding-left":"0"
 						},tempo)
-						.css({"overflow-x":"hidden"});
+						.css({"overflow-y":"hidden"});
 					$("#ac_sider").fadeIn(tempo);
 					$("#ac_sider > section:nth-child("+($(this).index()+1)+")").fadeIn(0);
 					$("#menu_tiles").fadeOut(tempo);
@@ -150,8 +179,8 @@
 	
 	<section id="menu_tiles">
 		<section id="menu">&#9776;</section>
-		<section><img src="images/email-24.png" /></section>
 		<!--
+		<section><img src="images/email-24.png" /></section>
 		<section><img src="images/user1461.png" /></section>
 		-->
 		<section><a href="//www.behance.net/angelocovino"><img src="images/behance-48.png" /></a></section>
@@ -175,7 +204,8 @@
 	</section>
 	
 	<section id="contacts" class="unicolor">
-		contacts
+		Contact me<br />
+		asd
 	</section>
 </body>
 </html>

@@ -10,6 +10,8 @@ html,
 body {
   height: 100%;
   width: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 * {
   padding: 0;
@@ -379,6 +381,7 @@ body {
 	left:0;
 	//overflow-x:auto;
 	overflow-x:hidden;
+	overflow-y:auto;
 	//font-family:'Advent Pro';
 	//font-family:'Karla';
 	font-family:'Lato';
@@ -433,6 +436,7 @@ body {
 }
 .corpo,
 .unicolor {
+	line-height:1.25em;
 	min-height:100%;
 	font-size:0.8em;
 	padding:1em 0em;

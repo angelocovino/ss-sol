@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<?php
+		// PATHS
+		$images_path="images/";
+		$icons_path=$images_path."icons/";
+		$stylesheet_path="stylesheet/";
+	?>
 	<!-- META TAGS -->
 	<meta charset="utf-8">
 	<meta name="author" content="Angelo Covino">
 	<meta name="description" content="Angelo Covino Web Developer">
-	<!--
 	<meta name="copyright" content="Copyright 2015 Angelo Covino" />
 	<meta name="distribution" content="global" />
-	-->
 	<meta name="keywords" content="Angelo, Covino, Angelo Covino, angelotm">
 	<meta name="robots" content="index, follow">
 	<meta name="revisit-after" content="2 days" />
@@ -16,22 +20,14 @@
 	<!-- TITLE -->
 	<title>Angelo Covino</title>
 	<!-- LINKS -->
-	<?php
-		$images_path="images/";
-		$stylesheet_path="stylesheet/";
-	?>
 	<!--
-	<link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Advent+Pro:400,100,200,300,500,600,700' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" type="image/x-icon" href="<?php echo $images_path; ?>icono.ico" />
-	<link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:300,400'>
 	-->
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
-	<link rel='stylesheet' type='text/css' href='<?php echo $stylesheet_path; ?>stylesheet.css'>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<!--
-	<script src="development/jquery-1.11.0.min.js"></script>
-	-->
+	<link href="//fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet" type="text/css">
+	<link href="<?php echo $stylesheet_path; ?>reset.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo $stylesheet_path; ?>stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo $stylesheet_path; ?>ac_sider.css" rel="stylesheet" type="text/css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
 		/* SCROLL TO ANCHORS */
@@ -180,17 +176,17 @@
 	<section id="menu_tiles">
 		<section id="menu">&#9776;</section>
 		<!--
-		<section><img src="images/email-24.png" /></section>
-		<section><img src="images/user1461.png" /></section>
+		<section><img src="<?php echo $icons_path; ?>email.png" /></section>
+		<section><img src="<?php echo $icons_path; ?>user.png" /></section>
 		-->
-		<section><a href="//www.behance.net/angelocovino"><img src="images/behance-48.png" /></a></section>
-		<section><a href="//github.com/angelocovino"><img src="images/github-48.png" /></a></section>
+		<section><a href="//www.behance.net/angelocovino" target="_blank"><img src="<?php echo $icons_path; ?>behance.png" /></a></section>
+		<section><a href="//github.com/angelocovino" target="_blank"><img src="<?php echo $icons_path; ?>github.png" /></a></section>
 	</section>
 	
 	<section class="corpo">
 		<h1>Angelo Covino</h1>
 		<h2>web developer</h2>
-		asd
+		lorem ipsum<br />
 		<br />
 		<a class="button">work with me</a>
 	</section>

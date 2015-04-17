@@ -1,401 +1,26 @@
 /*
- * Angelo Covino Reset Stylesheet (in combo with html5doctor.com reset stylesheet)
- */
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-html,
-body {
-  height: 100%;
-  width: 100%;
-  max-width: 100%;
-  max-height: 100%;
-}
-* {
-  padding: 0;
-  padding: none;
-  margin: 0;
-  margin: none;
-  border: 0;
-  border: none;
-  box-shadow: none;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-}
-input[type="hidden"] {
-  display: none;
-}
-input[type="reset"]::-moz-focus-inner,
-input[type="button"]::-moz-focus-inner,
-input[type="submit"]::-moz-focus-inner,
-input[type="file"] > input[type="button"]::-moz-focus-inner,
-button::-moz-focus-inner {
-  padding: 0;
-  padding: none;
-  border: 0;
-  border: none;
-}
-textarea:hover,
-textarea:active,
-textarea:focus,
-input:hover,
-input:active,
-input:focus,
-button:hover,
-button:active,
-button:focus {
-  outline: 0px !important;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-}
-/* bordo (su chrome blue) quando la textarea ha il focus */
-address {
-  font-style: normal;
-  font-weight: normal;
-}
-a,
-a:link,
-a:hover,
-a:active,
-a:visited {
-  text-decoration: none;
-}
-a:hover,
-button:hover {
-  cursor: pointer;
-}
-/*
- * html5doctor.com Reset Stylesheet
- * v1.6.1
- * Last Updated: 2010-09-17
- * Author: Richard Clark - http://richclarkdesign.com
- */
-input,
-button,
-select,
-option {
-  -moz-outline-style: none;
-  outline: none;
-}
-html,
-body,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-}
-body {
-  line-height: 1;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  vertical-align: baseline;
-}
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-[hidden],
-template {
-  display: none;
-}
-nav ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-a {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background-color: transparent;
-}
-a:active,
-a:hover {
-  outline: 0;
-}
-/* change colours to suit your needs */
-ins {
-  background-color: #ff9;
-  color: #000;
-  text-decoration: none;
-}
-/* change colours to suit your needs */
-mark {
-  background-color: #ff9;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
-}
-del {
-  text-decoration: line-through;
-}
-abbr[title],
-dfn[title] {
-  border-bottom: 1px dotted;
-  cursor: help;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-td,
-th {
-  padding: 0;
-}
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  margin: 0;
-  padding: 0;
-  background-color: #ccc;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-}
-input,
-select {
-  vertical-align: middle;
-}
-/* NEWEST THINGS */
-b,
-strong {
-  font-weight: bold;
-}
-dfn {
-  font-style: italic;
-}
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-small {
-  font-size: 80%;
-}
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-sup {
-  top: -0.5em;
-}
-sub {
-  bottom: -0.25em;
-}
-img {
-  border: 0;
-}
-svg:not(:root) {
-  overflow: hidden;
-}
-figure {
-  margin: 1em 40px;
-}
-pre {
-  overflow: auto;
-}
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-button,
-input,
-optgroup,
-select,
-textarea {
-  margin: 0;
-}
-/* color:inherit; font:inherit; */
-button {
-  overflow: visible;
-}
-button,
-select {
-  text-transform: none;
-}
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer;
-}
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-input {
-  line-height: normal;
-}
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-input[type="search"] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-legend {
-  border: 0;
-  padding: 0;
-}
-textarea {
-  overflow: auto;
-}
-optgroup {
-  font-weight: bold;
-}
-
-body {
+	#faf5f3
+*/
+html, body {
 	position:relative;
 	top:0;
 	left:0;
-	//overflow-x:auto;
+}
+body {
 	overflow-x:hidden;
 	overflow-y:auto;
-	//font-family:'Advent Pro';
-	//font-family:'Karla';
 	font-family:'Lato';
 	font-weight:300;
 	font-size:20px;
 	text-align:center;
 	line-height:1.5em;
-	//background:url('../images/n/017.jpg') bottom center no-repeat fixed transparent;
-	background:url('../images/n/bg.jpg') center center no-repeat fixed black;
+	background:url('../images/bg.jpg') center center no-repeat scroll rgba(250, 245, 243, 1);
 	background-size:cover;
 	padding-left:45px;
 	box-sizing:border-box;
 	color:rgba(0, 0, 0, 0.5);
 }
+
 #menu_tiles {
 	position:fixed;
 	left:0;
@@ -407,7 +32,6 @@ body {
 }
 #menu_tiles section {
 	display:inline-block;
-	//color:rgba(250, 245, 243, 0.85);
 	color:white;
 	text-align:center;
 	padding:0.5em 0em;
@@ -421,19 +45,21 @@ body {
 	transition:all 0.3s ease;
 	opacity:0.7;
 }
+#menu_tiles section:hover {
+	color:white;
+	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.2);
+	opacity:1;
+}
+#menu_tiles section a {
+	display:block;
+}
 #menu_tiles section img {
 	display:inline-block;
 	width:20px;
 	padding-bottom:2px;
 	vertical-align:middle;
 }
-#menu_tiles section:hover {
-	opacity:1;
-}
-#menu_tiles section:hover {
-	color:white;
-	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.2);
-}
+
 .corpo,
 .unicolor {
 	line-height:1.25em;
@@ -446,10 +72,10 @@ body {
 	color:white;
 }
 .unicolor {
-	//background:#faf5f3;
 	background:rgba(250, 245, 243, 1);
 	color:rgba(0, 0, 0, 0.5);
 }
+
 .button {
 	font-size:0.7em;
 	text-transform:uppercase;
@@ -467,6 +93,7 @@ body {
 	border:1px solid rgba(250, 245, 243, 0.5);
 	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.5);
 }
+
 h1 {
 	display:inline-block;
 	font-size:3em;
@@ -475,10 +102,6 @@ h1 {
 	font-weight:300;
 	line-height:1em;
 	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.25);
-	//border-bottom:1px solid rgba(250, 245, 243, 0.85);
-}
-.big {
-	font-weight:300;
 }
 h2 {
 	font-size:0.7em;
@@ -491,138 +114,4 @@ h2 {
 	letter-spacing:1.3em;
 	padding-left:1.5em;
 	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.25);
-}
-#logo {
-	display:inline-block;
-	padding:1em 1em;
-	border-radius:50%;
-	background:rgba(190, 68, 68, 0.9);
-}
-/*
-nav {
-	margin-top:1em;
-	border-radius:0.2em;
-	display:inline-block;
-	border:1px solid white;
-	padding:0em 0.25em;
-	padding-bottom:0.25em;
-}
-nav a {
-	display:inline-block;
-	color:white;
-	font-size:0.75em;
-	text-transform:lowercase;
-	padding:0em 0.25em;
-}
-.triangolo_dietro {
-	position:absolute;
-	left:50%;
-	top:-25px;
-	margin-left:-50px;
-	font-size:0.01em;
-	width:0;
-	height:0;
-	border-style:solid;
-	border-width:75px 50px 0 50px;
-	border-color:white transparent transparent transparent;
-}
-.bbg1 {
-	background-image:url('../images/bg.png'), url('../images/n/blurred-colors-minimalistic-simple-simple-background-1600x1200.jpg');
-	background-repeat:repeat, no-repeat;
-	background-position:0, 0;
-	background-attachment:fixed, fixed;
-	background-size:auto, cover;
-}
-*/
-#ac_sider {
-	display:none;
-	position:fixed;
-	left:0;
-	top:0;
-	height:100%;
-	background:rgba(0, 0, 0, 0.2);
-	width:260px;
-	border-right:1px solid rgba(250, 245, 243, 0.25);
-	padding:0.25em 0.5em;
-	box-sizing:border-box;
-	color:rgba(250, 245, 243, 0.85);
-	/*
-	background-image:linear-gradient(to bottom, rgba(250, 245, 243, 0.85), rgba(250, 245, 243, 0.85)), url('../images/n/017.jpg');
-	background-repeat:repeat, no-repeat;
-	background-position:0, 0;
-	background-attachment:fixed, fixed;
-	background-size:auto, cover;
-	*/
-}
-#ac_sider ul {
-	list-style:none;
-	border-top:2px solid rgba(250, 245, 243, 0.25);
-	border-bottom:2px solid rgba(250, 245, 243, 0.25);
-}
-
-#ac_sider ul#menu_main li:not(:last-child):not(:nth-last-child(2)),
-#ac_sider ul:not(#menu_main) li:not(:last-child) {
-	border-bottom:1px solid rgba(250, 245, 243, 0.25);
-}
-#ac_sider ul#menu_contact label {
-	display:block;
-	text-align:left;
-	font-size:0.7em;
-	padding:0em;
-	padding-top:0.5em;
-	line-height:0.5em;
-}
-#ac_sider ul#menu_contact input,
-#ac_sider ul#menu_contact textarea {
-	width:100%;
-	background:rgba(0, 0, 0, 0.15);
-	box-sizing:border-box;
-}
-#ac_sider ul#menu_contact textarea {
-	margin-top:0.75em;
-	resize:vertical;
-	min-height:5em;
-}
-#ac_sider ul li a {
-	display:block;
-	font-size:0.6em;
-	text-transform:uppercase;
-	color:inherit;
-	transition:all 0.25s ease;
-	margin:0.25em 0em;
-	letter-spacing:0.1em;
-}
-#ac_sider ul li a:hover {
-	color:white;
-	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.2);
-}
-/*
-#ac_sider ul li a:hover:before {content:'- ';}
-#ac_sider ul li a:hover:after {content:' -';}
-*/
-#ac_sider_title {
-	text-align:center;
-	font-size:0.9em;
-	padding:1em 0em;
-	line-height:0.75em;
-	padding-bottom:0;
-}
-#ac_sider_subtitle {
-	text-align:center;
-	font-size:0.6em;
-	letter-spacing:0.1em;
-	padding:1em 0em;
-	padding-top:0;
-}
-#ac_sider_copyright {
-	text-align:center;
-	font-size:0.6em;
-	padding:0.6em 0em;
-}
-#ac_sider_totop {
-	border-top:1px solid rgba(250, 245, 243, 0.25);
-	display:none;
-}
-#ac_sider > section:not(:first-child) {
-	display:none;
 }

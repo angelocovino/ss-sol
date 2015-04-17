@@ -73,7 +73,7 @@
 			}
 		});
 		// BLOCK TOUCH FOR MOBILE
-		$('html, body').on('touchstart touchmove', function(e){ 
+		$('html, body').on('touchmove', function(e){ 
 			if(menu_opened){
 				e.preventDefault();
 			}

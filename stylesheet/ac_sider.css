@@ -1,3 +1,4 @@
+/* AC SIDER */
 #ac_sider {
 	display:none;
 	position:fixed;
@@ -10,19 +11,26 @@
 	padding:0.25em 0.5em;
 	box-sizing:border-box;
 	color:rgba(250, 245, 243, 0.85);
-	/*
-	background-image:linear-gradient(to bottom, rgba(250, 245, 243, 0.85), rgba(250, 245, 243, 0.85)), url('../images/n/017.jpg');
-	background-repeat:repeat, no-repeat;
-	background-position:0, 0;
-	background-attachment:fixed, fixed;
-	background-size:auto, cover;
-	*/
 }
 #ac_sider ul {
 	list-style:none;
 	border-top:2px solid rgba(250, 245, 243, 0.25);
 	border-bottom:2px solid rgba(250, 245, 243, 0.25);
 }
+#ac_sider ul li a {
+	display:block;
+	font-size:0.6em;
+	text-transform:uppercase;
+	color:inherit;
+	transition:all 0.25s ease;
+	margin:0.25em 0em;
+	letter-spacing:0.1em;
+}
+#ac_sider ul li a:hover {
+	color:white;
+	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
 #ac_sider ul#menu_main li:not(:last-child):not(:nth-last-child(2)),
 #ac_sider ul:not(#menu_main) li:not(:last-child) {
 	border-bottom:1px solid rgba(250, 245, 243, 0.25);
@@ -46,23 +54,7 @@
 	resize:vertical;
 	min-height:5em;
 }
-#ac_sider ul li a {
-	display:block;
-	font-size:0.6em;
-	text-transform:uppercase;
-	color:inherit;
-	transition:all 0.25s ease;
-	margin:0.25em 0em;
-	letter-spacing:0.1em;
-}
-#ac_sider ul li a:hover {
-	color:white;
-	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.2);
-}
-/*
-#ac_sider ul li a:hover:before {content:'- ';}
-#ac_sider ul li a:hover:after {content:' -';}
-*/
+
 #ac_sider_title {
 	text-align:center;
 	font-size:0.9em;

@@ -21,6 +21,7 @@ body {
 	color:rgba(0, 0, 0, 0.5);
 }
 
+/* MENU TILES */
 #menu_tiles {
 	position:fixed;
 	left:0;
@@ -60,6 +61,7 @@ body {
 	vertical-align:middle;
 }
 
+/* BODY CONTAINERS */
 .corpo,
 .unicolor {
 	line-height:1.25em;
@@ -76,6 +78,7 @@ body {
 	color:rgba(0, 0, 0, 0.5);
 }
 
+/* BUTTON STYLES */
 .button {
 	font-size:0.7em;
 	text-transform:uppercase;
@@ -94,6 +97,7 @@ body {
 	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
+/* GENERAL STYLES */
 h1 {
 	display:inline-block;
 	font-size:3em;

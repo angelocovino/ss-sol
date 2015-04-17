@@ -174,8 +174,9 @@
 	</div>
 	
 	<section id="menu_tiles">
-		<section id="menu">&#9776;</section>
+		<section id="menu"><img src="<?php echo $icons_path; ?>threelines.png" /></section>
 		<!--
+		<section id="menu">&#9776;</section>
 		<section><img src="<?php echo $icons_path; ?>email.png" /></section>
 		<section><img src="<?php echo $icons_path; ?>user.png" /></section>
 		-->

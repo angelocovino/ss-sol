@@ -14,11 +14,16 @@ body {
 	font-size:20px;
 	text-align:center;
 	line-height:1.5em;
-	background:url('../images/bg.jpg') center center no-repeat scroll rgba(250, 245, 243, 1);
-	background-size:cover;
 	padding-left:45px;
 	box-sizing:border-box;
 	color:rgba(0, 0, 0, 0.5);
+}
+
+/* SHARED BACKGROUND */
+#menu_tiles,
+.corpo {
+	background:url('../images/bg.jpg') center center no-repeat fixed rgba(250, 245, 243, 1);
+	background-size:cover;
 }
 
 /* MENU TILES */

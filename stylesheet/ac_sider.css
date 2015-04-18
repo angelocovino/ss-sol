@@ -5,7 +5,12 @@
 	left:0;
 	top:0;
 	height:100%;
-	background:rgba(0, 0, 0, 0.2);
+	
+	background-image:linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/bg.jpg');
+	background-position:center center, center center;
+	background-repeat:no-repeat no-repeat;
+	background-attachment:fixed, fixed;
+	background-size:cover, cover;
 	width:260px;
 	border-right:1px solid rgba(250, 245, 243, 0.25);
 	padding:0.25em 0.5em;

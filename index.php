@@ -181,6 +181,7 @@
 		<section><img src="<?php echo $icons_path; ?>user.png" /></section>
 		-->
 		<section><a href="//www.behance.net/angelocovino" target="_blank"><img src="<?php echo $icons_path; ?>behance.png" /></a></section>
+		<section><a href="//linkedin.com/in/angelocovino" target="_blank"><img src="<?php echo $icons_path; ?>linkedin.png" /></a></section>
 		<section><a href="//github.com/angelocovino" target="_blank"><img src="<?php echo $icons_path; ?>github.png" /></a></section>
 	</section>
 	

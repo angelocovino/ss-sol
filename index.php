@@ -140,8 +140,8 @@
 			<div id="ac_sider_title">Angelo Covino</div>
 			<div id="ac_sider_subtitle">personal website</div>
 			<ul id="menu_main">
+				<li><a href="#aboutme">about me</a></li>
 				<li><a href="#works">works</a></li>
-				<li class="active"><a href="#portfolio">portfolio</a></li>
 				<li><a href="#contacts">contacts</a></li>
 				<li id="ac_sider_totop"><a href="#">return to top</a></li>
 			</ul>
@@ -198,8 +198,19 @@
 		works
 	</section>
 	
-	<section id="portfolio" class="corpo">
-		portfolio
+	<section id="aboutme" class="corpo">
+		<div class="title">about me</div>
+		Hello! I am a self-taught Web Developer &amp; User Interface Designer based in London.<br />
+		<br />
+		Born in Naples (Italy), I have begun to study Computer Science in Naples, and I would like to complete it in London. In December 2014 I am arrived in London to start an awesome experience.<br />
+		<br />
+		I have a genuine passion in what I do, in fact I have started when i was just a child with HTML4. I can still remember how proud I was when I saw my first 'Hello World!'. That has been the moment I realized it was my real passion.<br />
+		<br />
+		I often spend my free time learning new languages and developing something on my personal computer.<br />
+		<br />
+		I am currently studying english at Westminster Kingsway College in Victoria to improve my English proficiency and I am also working as Freelance Web Developer.<br />
+		<br />
+		If you have a project tell me about it,<br />contact me!
 	</section>
 	
 	<section id="contacts" class="unicolor">

@@ -189,7 +189,9 @@
 		<h1>Angelo Covino</h1>
 		<h2>web developer</h2>
 		lorem ipsum<br />
-		in pause<br />
+		<!--
+		an update just to stay connected ;)<br />
+		-->
 		<br />
 		<a class="button">work with me</a>
 	</section>

@@ -186,8 +186,8 @@
 	</section>
 	
 	<section class="corpo">
-		<h1>Angelo Covino</h1>
-		<h2>web developer</h2>
+		<h1>Clarity, Simplicity, Beauty</h1>
+		<h2>New technologies, warm old-fashioned eyes</h2>
 		lorem ipsum<br />
 		<br />
 		<a class="button">work with me</a>

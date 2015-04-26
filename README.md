@@ -7,6 +7,8 @@ In both the Poetic Edda and the Prose Edda she is described as the sister of the
 #### start date
 3 April 2015
 
+#### a kind of pause taken on 19 April to date
+
 #### ideas
 - ac_sider [v3]
 - menu_tiles [v2]
